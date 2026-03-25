@@ -44,6 +44,17 @@ export const education = [
 
 export const projects = [
   {
+    title: "Fixora",
+    description: [
+      "Full-stack home services booking platform built with the MERN stack (MongoDB, Express, React, Node.js).",
+      "Integrated secure user authentication to allow users to securely browse and book services.",
+      "Designed a clean, responsive interface to ensure a seamless experience across devices while keeping a structured backend.",
+    ],
+    tech: ["React", "Node.js", "Express", "MongoDB"],
+    github: "https://github.com/Raushan-7/Fixora",
+    period: "2024",
+  },
+  {
     title: "Port Scanner",
     description: [
       "Developed a desktop port-scanner in Python that allows users to input a domain or IP address and a port range, then scans and reports open/closed ports via socket programming.",
@@ -72,11 +83,13 @@ export const certificates = [
     title: "Cyber Security Essentials",
     issuer: "Lovely Professional University",
     date: "July 2025",
+    image: "/cyber-security.png",
   },
   {
     title: "Computational Theory",
     issuer: "Infosys",
     date: "April 2025",
+    image: "/computational-theory.png",
   },
 ];
 

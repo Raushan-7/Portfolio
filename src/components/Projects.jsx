@@ -94,11 +94,18 @@ const Projects = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.1 * index }}
               >
-                <HiOutlineAcademicCap className="cert-icon" />
-                <div className="cert-info">
-                  <h4>{cert.title}</h4>
-                  <p>{cert.issuer}</p>
-                  <span className="cert-date">{cert.date}</span>
+                {cert.image && (
+                  <div className="cert-image-container">
+                    <img src={cert.image} alt={cert.title} className="cert-image" />
+                  </div>
+                )}
+                <div className="cert-content">
+                  <HiOutlineAcademicCap className="cert-icon" />
+                  <div className="cert-info">
+                    <h4>{cert.title}</h4>
+                    <p>{cert.issuer}</p>
+                    <span className="cert-date">{cert.date}</span>
+                  </div>
                 </div>
               </motion.div>
             ))}
